@@ -1,0 +1,10 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# Lock file (optional but usually committed — you can keep it)
+# .terraform.lock.hcl
+
+# Misc
+*.log
