@@ -81,13 +81,13 @@ resource "aws_security_group" "secure" {
   }
 }
 
-resource "aws_s3_bucket" "joyadeleye" {
-  bucket = "undefined"
+resource "aws_s3_bucket" "joyadeleye13434343" {
+  bucket = "undefined13434343"
 
 }
 
-resource "aws_s3_bucket_public_access_block" "joyadeleye" {
-  bucket = aws_s3_bucket.joyadeleye.id
+resource "aws_s3_bucket_public_access_block" "joyadeleye13434343" {
+  bucket = aws_s3_bucket.joyadeleye13434343.id
 
   block_public_acls       = true
   block_public_policy     = true
