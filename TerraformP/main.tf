@@ -104,7 +104,7 @@ resource "aws_s3_bucket_public_access_block" "joyadeleye" {
 }
 
 resource "aws_instance" "Arike1" {
-  ami                    = "ami-01c952cfc86b7870d"
+  ami                    = "ami-0734cbe7f841a2e9b"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.secure.id]
   subnet_id              = aws_subnet.sub1.id
@@ -114,7 +114,7 @@ resource "aws_instance" "Arike1" {
 
 
 resource "aws_instance" "Arike2" {
-  ami                    = "ami-01c952cfc86b7870d"
+  ami                    = "ami-0734cbe7f841a2e9b"
   instance_type          = "t3.micro"
   vpc_security_group_ids = [aws_security_group.secure.id]
   subnet_id              = aws_subnet.sub2.id
