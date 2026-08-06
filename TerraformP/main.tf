@@ -13,7 +13,7 @@ resource "aws_vpc" "kadel" {
 resource "aws_subnet" "sub1" {
   vpc_id                  = aws_vpc.kadel.id
   cidr_block              = "10.0.0.0/24"
-  availability_zone       = "us-east-1a"
+  availability_zone       = "us-east-2a"
   map_public_ip_on_launch = true
 
 
@@ -23,7 +23,7 @@ resource "aws_subnet" "sub1" {
 resource "aws_subnet" "sub2" {
   vpc_id                  = aws_vpc.kadel.id
   cidr_block              = "10.0.1.0/24"
-  availability_zone       = "us-east-1b"
+  availability_zone       = "us-east-2b"
   map_public_ip_on_launch = true
 
 }
@@ -89,13 +89,13 @@ resource "aws_security_group" "secure" {
   }
 }
 
-resource "aws_s3_bucket" "lalaadeyemi" {
+resource "aws_s3_bucket" "joyadeleye" {
   bucket = "undefined"
 
 }
 
-resource "aws_s3_bucket_public_access_block" "lalaadeyemi" {
-  bucket = aws_s3_bucket.lalaadeyemi.id
+resource "aws_s3_bucket_public_access_block" "joyadeleye" {
+  bucket = aws_s3_bucket.joyadeleye.id
 
   block_public_acls       = true
   block_public_policy     = true
